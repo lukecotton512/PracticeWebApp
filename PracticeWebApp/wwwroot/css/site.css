@@ -51,25 +51,31 @@ label {
 // Create two columns. 
 #content {
     margin: 0px 0px;
-    display: table;
+    display: block;
     width: 100%;
     background-color: #DDDDDD
 }
 
 .column {
     width: 45%;
-    padding: 10px 0px;
+    padding: 0px 0px;
     margin-right: auto;
     background-color: #FFFFFF;
-    display: table-cell
+    display: block;
 }
 
 .rightcolumn {
-    padding-left: 10%;
+    float: right;
 }
 
 .leftcolumn {
-    
+    float: left;
+}
+
+#content:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 td {
